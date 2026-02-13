@@ -101,22 +101,24 @@
 				if(percentage < 35 || a < 35 || b < 35 || c < 35 || d < 35 || e < 35 || f < 35){
 					document.getElementById('gradeid').innerHTML = "Fail";
 				}
-				else if(percentage >= 100){
-					document.getElementById('gradeid').innerHTML = "A grade";
+				else if(percentage < 50){
+					document.getElementById('gradeid').innerHTML = "E grade";
 				}
-				else if(percentage >= 80){
-					document.getElementById('gradeid').innerHTML = "B grade"; 
-				}
-				else if(percentage >= 70){
-					document.getElementById('gradeid').innerHTML = "C grade"; 
-				}
-				else if(percentage >= 60){
+				else if(percentage < 60){
 					document.getElementById('gradeid').innerHTML = "D grade"; 
 				}
-				else if(percentage >= 50){
-					document.getElementById('gradeid').innerHTML = "E grade"; 
+				else if(percentage < 70){
+					document.getElementById('gradeid').innerHTML = "C grade"; 
 				}
-				
+				else if(percentage < 80){
+					document.getElementById('gradeid').innerHTML = "B grade"; 
+				}
+				else if(percentage <= 100){
+					document.getElementById('gradeid').innerHTML = "A grade"; 
+				}
+				else{
+					document.getElementById('gradeid').innerHTML = "Not Valid"; 
+				}
 			}
 			
 		</script>
