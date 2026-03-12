@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			Calculator 1
+		</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<div class="mx-auto overflow-hidden mt-4 shadow-lg mb-2 bg-white shadow-lg border rounded-lg lg:w-2/7 md:w-3/7 sm:w-4/7">
+			<div class="">
+				<div class="p-3 text-center text-3xl bg-gray-300">
+					<span class="text-orange-600 font-bold">Calculator</span>
+				</div>
+				<div class="p-8 h-26 text-black text-right text-3xl border-b-1 bg-gray-100">
+					<p id="shownum"></p>
+				</div>
+				
+				<div class="flex items-stretch bg-white	h-24 mt-4">
+					<div class="flex-1 px-2 py-2 justify-center flex items-center text-black text-2xl font-semibold">
+						<div class="rounded-full h-17 w-17 bg-gray-100 flex items-center justify-center shadow-lg border-2 border-orange-200 hover:border-2 hover:border-orange-300 focus:outline-none cursor-pointer">
+							C
+						</div>
+					</div>
+				
+					<div class="flex-1 px-2 py-2 justify-center flex items-center text-black text-2xl font-semibold">
+						<div class="rounded-full h-17 w-17 bg-gray-100 flex items-center justify-center shadow-lg border-2 border-orange-200 hover:border-2 hover:border-orange-300 focus:outline-none cursor-pointer">
+							%
+						</div>
+					</div>
+				
+					<div class="flex-1 px-2 py-2 justify-center flex items-center text-black text-xl">
+						<div class="rounded-full h-17 w-17 bg-gray-100 flex items-center justify-center shadow-lg border-2 border-orange-200 hover:border-2 hover:border-orange-300 focus:outline-none cursor-pointer">
+							<i class="fa-regular fa-rectangle-xmark"></i>
+						</div>
+					</div>
+				
+					<div class="flex-1 px-2 py-2 justify-center flex items-center text-black text-2xl font-semibold">
+						<div class="rounded-full h-17 w-17 bg-gray-100 flex items-center justify-center shadow-lg border-2 border-orange-200 hover:border-2 hover:border-orange-300 focus:outline-none cursor-pointer">
+							÷
+						</div>
+					</div>
+				</div>
+					
+				<div class="flex items-stretch bg-white h-24">
+					<div class="flex-1 px-2 py-2 justify-center flex items-center text-black text-2xl font-semibold">
+						<div class="rounded-full h-17 w-17 flex items-center justify-center shadow-lg border-2 border-orange-200 hover:border-2 hover:border-orange-300 focus:outline-none cursor-pointer">
+							7
+						</div>
+					</div>
+				
+					<div class="flex-1 px-2 py-2 justify-center flex items-center text-black text-2xl font-semibold">
+						<div class="rounded-full h-17 w-17 flex items-center justify-center shadow-lg border-2 border-orange-200 hover:border-2 hover:border-orange-300 focus:outline-none cursor-pointer">
+							8
+						</div>
+					</div>
+				
+					<div class="flex-1 px-2 py-2 justify-center flex items-center text-black text-2xl font-semibold">
+						<div class="rounded-full h-17 w-17 flex items-center justify-center shadow-lg border-2 border-orange-200 hover:border-2 hover:border-orange-300 focus:outline-none cursor-pointer">
+							9
+						</div>
+					</div>
+				
+					<div class="flex-1 px-2 py-2 justify-center flex items-center text-black text-2xl font-semibold">
+						<div class="rounded-full h-17 w-17 bg-gray-100 flex items-center justify-center shadow-lg border-2 border-orange-200 hover:border-2 hover:border-orange-300 focus:outline-none cursor-pointer">
+							×
+						</div>
+					</div>
+				</div>
+					
+				<div class="flex items-stretch bg-white h-24">
+					<div class="flex-1 px-2 py-2 justify-center flex items-center text-black text-2xl font-semibold">
+						<div class="rounded-full h-17 w-17 flex items-center justify-center shadow-lg border-2 border-orange-200 hover:border-2 hover:border-orange-300 focus:outline-none cursor-pointer">
+							4
+						</div>
+					</div>
+				
+					<div class="flex-1 px-2 py-2 justify-center flex items-center text-black text-2xl font-semibold">
+						<div class="rounded-full h-17 w-17 flex items-center justify-center shadow-lg border-2 border-orange-200 hover:border-2 hover:border-orange-300 focus:outline-none cursor-pointer">
+							5
+						</div>
+					</div>
+				
+					<div class="flex-1 px-2 py-2 justify-center flex items-center text-black text-2xl font-semibold">
+						<div class="rounded-full h-17 w-17 flex items-center justify-center shadow-lg border-2 border-orange-200 hover:border-2 hover:border-orange-300 focus:outline-none cursor-pointer">
+							6
+						</div>
+					</div>
+				
+					<div class="flex-1 px-2 py-2 justify-center flex items-center text-black text-2xl font-semibold">
+						<div class="rounded-full h-17 w-17 bg-gray-100 flex items-center justify-center shadow-lg border-2 border-orange-200 hover:border-2 hover:border-orange-300 focus:outline-none cursor-pointer">
+							-
+						</div>
+					</div>
+				</div>
+					
+				<div class="flex items-stretch bg-white h-24">
+					<div class="flex-1 px-2 py-2 justify-center flex items-center text-black text-2xl font-semibold">
+						<div onclick="btn()" class="rounded-full h-17 w-17 flex items-center justify-center shadow-lg border-2 border-orange-200 hover:border-2 hover:border-orange-300 focus:outline-none cursor-pointer">
+							1
+						</div>
+					</div>
+				
+					<div class="flex-1 px-2 py-2 justify-center flex items-center text-black text-2xl font-semibold">
+						<div class="rounded-full h-17 w-17 flex items-center justify-center shadow-lg border-2 border-orange-200 hover:border-2 hover:border-orange-300 focus:outline-none cursor-pointer">
+							2
+						</div>
+					</div>
+				
+					<div class="flex-1 px-2 py-2 justify-center flex items-center text-black text-2xl font-semibold">
+						<div class="rounded-full h-17 w-17 flex items-center justify-center shadow-lg border-2 border-orange-200 hover:border-2 hover:border-orange-300 focus:outline-none cursor-pointer">
+							3
+						</div>
+					</div>
+				
+					<div class="flex-1 px-2 py-2 justify-center flex items-center text-black text-2xl font-semibold">
+						<div class="rounded-full h-17 w-17 bg-gray-100 flex items-center justify-center shadow-lg border-2 border-orange-200 hover:border-2 hover:border-orange-300 focus:outline-none cursor-pointer">
+							+
+						</div>
+					</div>
+				</div>
+					
+				<div class="flex items-stretch bg-white h-24 mb-4">
+					<div class="flex-1 px-2 py-2 justify-center flex items-center text-black text-2xl font-semibold">
+						<div class="rounded-full h-17 w-17 flex items-center justify-center shadow-lg border-2 border-orange-200 hover:border-2 hover:border-orange-300 focus:outline-none cursor-pointer">
+							00
+						</div>
+					</div>
+				
+					<div class="flex-1 px-2 py-2 justify-center flex items-center text-black text-2xl font-semibold">
+						<div class="rounded-full h-17 w-17 flex items-center justify-center shadow-lg border-2 border-orange-200 hover:border-2 hover:border-orange-300 focus:outline-none cursor-pointer">
+							0
+						</div>
+					</div>
+				
+					<div class="flex-1 px-2 py-2 justify-center flex items-center text-black text-2xl font-semibold">
+						<div class="rounded-full h-17 w-17 flex items-center justify-center shadow-lg border-2 border-orange-200 hover:border-2 hover:border-orange-300 focus:outline-none cursor-pointer">
+							.
+						</div>
+					</div>
+				
+					<div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+						<div class="rounded-full h-17 w-17 bg-orange-400 flex items-center justify-center shadow-lg border-2 border-orange-200 hover:border-2 hover:border-orange-300 focus:outline-none cursor-pointer">
+							=
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			document.getElementById('shownum').innerHTML = 0;
+			function btn(value=1){
+				document.getElementById('shownum').innerHTML = value;
+			}
+		</script>
+	</body>
+</html>
